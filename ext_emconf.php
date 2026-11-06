@@ -20,5 +20,5 @@ $EM_CONF[$_EXTKEY] = [
     ],
     'autoload' => [
         'classmap' => ['Classes'],
-    ]
+    ],
 ];

@@ -12,9 +12,9 @@ $GLOBALS['SiteConfiguration']['site']['columns']['basicauth_enabled'] = [
                 'label' => '',
                 'labelChecked' => 'Enabled',
                 'labelUnchecked' => 'Disabled',
-            ]
+            ],
         ],
-    ]
+    ],
 ];
 $GLOBALS['SiteConfiguration']['site']['columns']['basicauth_credentials'] = [
     'label' => 'Credentials',
@@ -40,9 +40,9 @@ $GLOBALS['SiteConfiguration']['site']['columns']['basicauth_allow_devipmask'] = 
                 'label' => '',
                 'labelChecked' => 'Enabled',
                 'labelUnchecked' => 'Disabled',
-            ]
+            ],
         ],
-    ]
+    ],
 ];
 $GLOBALS['SiteConfiguration']['site']['columns']['basicauth_allow_beuser'] = [
     'label' => 'Grant access when backend user logged in',
@@ -57,12 +57,11 @@ $GLOBALS['SiteConfiguration']['site']['columns']['basicauth_allow_beuser'] = [
                 'label' => '',
                 'labelChecked' => 'Enabled',
                 'labelUnchecked' => 'Disabled',
-            ]
+            ],
         ],
-    ]
+    ],
 ];
 
 $GLOBALS['SiteConfiguration']['site']['types']['0']['showitem'] .= '
     ,--div--;HTTP Basic Auth, basicauth_enabled, basicauth_credentials, basicauth_allow_devipmask, basicauth_allow_beuser
 ';
-

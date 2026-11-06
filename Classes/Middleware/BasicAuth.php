@@ -1,19 +1,20 @@
 <?php
+
 declare(strict_types=1);
+
 namespace Lemming\Httpbasicauth\Middleware;
 
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\MiddlewareInterface;
 use Psr\Http\Server\RequestHandlerInterface;
+use TYPO3\CMS\Core\Context\Context;
 use TYPO3\CMS\Core\Http\HtmlResponse;
 use TYPO3\CMS\Core\Site\Entity\Site;
-use TYPO3\CMS\Core\Context\Context;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 class BasicAuth implements MiddlewareInterface
 {
-
     public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface
     {
         $site = $request->getAttribute('site');
@@ -87,7 +88,7 @@ class BasicAuth implements MiddlewareInterface
 
     protected function getCredentialsFromAuthorizationHeader(ServerRequestInterface $request): ?string
     {
-        if (preg_match("/Basic\s+(.*)$/i", $request->getHeaderLine("Authorization"), $matches)) {
+        if (preg_match("/Basic\s+(.*)$/i", $request->getHeaderLine('Authorization'), $matches)) {
             $credentials = base64_decode($matches[1]);
             $usernamePasswordSeparator = ':';
             if (str_contains($credentials, $usernamePasswordSeparator)
