@@ -7,8 +7,6 @@ $GLOBALS['SiteConfiguration']['site']['columns']['basicauth_enabled'] = [
         'renderType' => 'checkboxLabeledToggle',
         'items' => [
             [
-                0 => '',
-                1 => '',
                 'label' => '',
                 'labelChecked' => 'Enabled',
                 'labelUnchecked' => 'Disabled',
@@ -35,8 +33,6 @@ $GLOBALS['SiteConfiguration']['site']['columns']['basicauth_allow_devipmask'] = 
         'renderType' => 'checkboxLabeledToggle',
         'items' => [
             [
-                0 => '',
-                1 => '',
                 'label' => '',
                 'labelChecked' => 'Enabled',
                 'labelUnchecked' => 'Disabled',
@@ -52,8 +48,6 @@ $GLOBALS['SiteConfiguration']['site']['columns']['basicauth_allow_beuser'] = [
         'renderType' => 'checkboxLabeledToggle',
         'items' => [
             [
-                0 => '',
-                1 => '',
                 'label' => '',
                 'labelChecked' => 'Enabled',
                 'labelUnchecked' => 'Disabled',
